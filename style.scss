@@ -1,5 +1,22 @@
+//https://bennettfeely.com/clippy/
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+section {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	&.lower {
+		background: #333;
+	}
+	&.upper {
+		background: linear-gradient(45deg, lightblue, blueviolet);
+		clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 76% 55%, 75% 100%, 36% 53%, 0% 75%);
+	}
 }

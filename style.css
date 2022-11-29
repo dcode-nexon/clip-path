@@ -4,4 +4,19 @@
   box-sizing: border-box;
 }
 
+section {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+section.lower {
+  background: #333;
+}
+section.upper {
+  background: linear-gradient(45deg, lightblue, blueviolet);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 76% 55%, 75% 100%, 36% 53%, 0% 75%);
+}
+
 /*# sourceMappingURL=style.css.map */
